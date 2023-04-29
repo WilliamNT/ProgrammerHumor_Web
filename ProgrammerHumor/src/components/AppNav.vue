@@ -2,6 +2,7 @@
     import { library } from '@fortawesome/fontawesome-svg-core';
     import { faDiscord, faReddit, faTwitch } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+    import LogoImage from '../assets/site/logo.png';
 
     library.add(faDiscord);
     library.add(faReddit);
@@ -11,7 +12,8 @@
 <template>
     <nav class="navbar">
         <div class="navbar-brand">
-            <span>r/ProgrammerHumor</span>
+            <img :src="LogoImage" alt="ProgrammerHumor logo" class="navbar-brand-logo">
+            <span class="navbar-brand-name">r/ProgrammerHumor</span>
         </div>
         <ul class="navbar-items">
             <li class="navbar-item">

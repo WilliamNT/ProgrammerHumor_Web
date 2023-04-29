@@ -7,9 +7,24 @@ nav.navbar {
     align-items: center;
     padding: .7rem 2rem;
 
-    .navbar-brand {
-        font-weight: 600;
-        font-size: 1.05rem;
+    .navbar-brand {        
+        display: flex;
+        gap: .7rem;
+
+        .navbar-brand-name {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin: auto 0;
+            vertical-align: middle;
+            padding-bottom: 3.5px; // needed to visually vertically center the text
+        }
+
+        .navbar-brand-logo {
+            height: 32px;
+            width: auto;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
     }
 
     .navbar-items {
@@ -62,8 +77,16 @@ nav.navbar {
         }
 
         .navbar-brand {
-            font-size: .9rem;
-            font-weight: 700;
+
+            .navbar-brand-name {
+                display: none;
+                font-size: .9rem;
+                font-weight: 700;
+            }
+
+            .navbar-brand-logo {
+                height: 40px;
+            }
         }
     }
 }
