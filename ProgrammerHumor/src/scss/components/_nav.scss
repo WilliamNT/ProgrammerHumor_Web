@@ -63,16 +63,16 @@ nav.navbar {
         .navbar-items {
             gap: .7rem;
 
-            .navbar-item {
+            .navbar-item:has(.icon) {
                 background-color: $hover_background;
                 font-size: 0;
-            }
-            
-            .navbar-item .icon {
-                width: 1.5rem;
-                height: 100%;
-                margin: 0;
-                vertical-align: middle;
+
+                .icon {
+                    width: 1.5rem;
+                    height: 100%;
+                    margin: 0;
+                    vertical-align: middle;
+                }
             }
         }
 
