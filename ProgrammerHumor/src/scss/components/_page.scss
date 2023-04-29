@@ -19,4 +19,9 @@ body {
 #app {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex: 1;
 }

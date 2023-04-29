@@ -1,7 +1,12 @@
 <script setup lang="ts">
-    import AppNav from '../components/AppNav.vue';
+    import CommunityBar from '../components/CommunityBar.vue';
 </script>
 
 <template>
-    <AppNav />
+    <section class="home-hero">
+       <div class="hero-content">
+            <h1 class="hero-title">r/ProgrammerHumor</h1>
+            <CommunityBar />
+        </div>
+    </section>
 </template>

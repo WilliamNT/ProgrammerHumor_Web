@@ -1,0 +1,41 @@
+.community-bar {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    background-color: $rph_white;
+    border-radius: 2rem;
+    padding: .5rem;
+    list-style: none;
+    box-shadow: 0 1px 12px 1px rgba(0,0,0,0.37);
+    
+    .community-bar-item {
+        padding: .5rem .7rem;
+        font-weight: 600;
+        font-size: 1rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+
+        .icon {
+            margin-right: .25rem;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $hover_background;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .community-bar {
+        flex-direction: column;
+        border-radius: 1.5rem;
+
+        .community-bar-item {
+            padding: .8rem 1rem;
+            font-size: 1.1rem;
+        }
+    }
+}
