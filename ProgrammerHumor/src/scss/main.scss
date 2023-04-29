@@ -1,0 +1,17 @@
+// third-party
+@import "@fontsource/noto-sans/500.css";
+@import "@fontsource/noto-sans/500-italic.css";
+@import "@fontsource/noto-sans/600.css";
+@import "@fontsource/noto-sans/600-italic.css";
+@import "@fontsource/noto-sans/700.css";
+@import "@fontsource/noto-sans/700-italic.css";
+
+
+// globally needed
+@import "./globals/colors";
+
+// components
+@import "./components/page";
+@import "./components/nav";
+@import "./components/text";
+@import "./components/icons";
