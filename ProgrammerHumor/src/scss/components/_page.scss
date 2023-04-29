@@ -4,15 +4,19 @@
 }
 
 html,
-body {
+body,
+#app {
     height: 100%;
 }
 
 body {
     background-color: $body_background;
-    display: flex;
     margin: 0;
-    flex-direction: column;
     line-height: 100%;
     font-weight: 500;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
 }
