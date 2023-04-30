@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "rph.lol",
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview --host"
+    "preview": "vite preview --host",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/noto-sans": "^4.5.11",
@@ -18,6 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
