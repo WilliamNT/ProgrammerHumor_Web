@@ -24,6 +24,9 @@
                     Modmail
                 </a>
             </li>
+            <li class="navbar-item">
+                <RouterLink :to="{ name: 'projects' }" >Community Projects</RouterLink>
+            </li>
         </ul>
     </nav>
 </template>
