@@ -1,18 +1,24 @@
-<template>
-    <section class="projects-main">
+<script setup lang="ts">
+    import TempAvatar from '../assets/user/user_pfp.png';
+    import ProjectPost from '../components/ProjectPost.vue';
+</script>
 
-       <div class="project-post">
-           <div class="project-info">
-                <div class="project-author-info">
-                    <img class="author-pfp" src="../assets/user/user_pfp.png" alt="author-pfp"/>
-                    <div class="tag">Ideas</div>
-                    <div class="tag">In Progress</div>
-                </div>
-                <h1 class="project-title">RedditLang</h1>
-                <p class="project-description">ProgrammerHumor's own language</p>
-           </div>
-           <img class="project-image" alt="project-image"/>
-       </div>
+<template>
+    <section :class="[$style.projectsList]">
+
+       <ProjectPost :avatar="TempAvatar" username="Somebody" title="Post title" description="Post description" thumbnail="https://placehold.co/600x400" :tags="['Ideas', 'In Progress']"/>
 
     </section>
 </template>
+
+<style module lang="scss">
+    .projectsList {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .65rem;
+        max-width: 900px;
+        padding: 1rem;
+    }
+</style>
