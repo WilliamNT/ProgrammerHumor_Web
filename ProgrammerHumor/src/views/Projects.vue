@@ -1,24 +1,23 @@
 <script setup lang="ts">
-    import TempAvatar from '../assets/user/user_pfp.png';
-    import ProjectPost from '../components/ProjectPost.vue';
+import ProjectPost from "../components/ProjectPost.vue";
+
+const Tags = {
+  Done: "Done ✅",
+  InProgress: "In Progress 📈",
+  Ideas: "Ideas 💡",
+};
 </script>
 
 <template>
-    <section :class="[$style.projectsList]">
-
-       <ProjectPost :avatar="TempAvatar" username="Somebody" title="Post title" description="Post description" thumbnail="https://placehold.co/600x400" :tags="['Ideas', 'In Progress']"/>
-
-    </section>
+  <section class="flex flex-col justify-center max-w-4xl mx-auto p-4">
+    <ProjectPost
+      avatar="https://avatars.githubusercontent.com/u/62805599"
+      username="elijah629"
+      link="https://github.com/elijah629/redditlang"
+      title="RedditLang"
+      description="worlds #1 language"
+      thumbnail="https://placehold.co/600x400"
+      :tags="[Tags.Ideas, Tags.InProgress]"
+    />
+  </section>
 </template>
-
-<style module lang="scss">
-    .projectsList {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: .65rem;
-        max-width: 900px;
-        padding: 1rem;
-    }
-</style>
