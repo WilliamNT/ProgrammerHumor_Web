@@ -1,15 +1,14 @@
 <script setup lang="ts">
-  import { RouterView } from 'vue-router';
-  import AppNav from './components/AppNav.vue';
-  import AppFooter from './components/AppFooter.vue';
+import AppNav from "./components/AppNav.vue";
+import AppFooter from "./components/AppFooter.vue";
 </script>
 
 <template>
   <header>
-    <AppNav/>
+    <AppNav />
   </header>
   <main>
-    <RouterView />
+    <router-view />
   </main>
   <AppFooter />
 </template>
