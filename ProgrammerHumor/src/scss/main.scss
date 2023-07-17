@@ -1,3 +1,18 @@
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Firefox
+details > summary:first-of-type {
+  list-style-type: none;
+}
+
+// Chrome
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 // third-party
 @import "@fontsource/noto-sans/500.css";
 @import "@fontsource/noto-sans/500-italic.css";
@@ -11,9 +26,7 @@
 
 // components
 @import "./components/page";
-@import "./components/nav";
-@import "./components/text";
 @import "./components/icons";
-@import "./components/footer";
-@import "./components/community_bar";
 @import "./components/hero";
+@import "./components/links";
+@import "./components/buttons";

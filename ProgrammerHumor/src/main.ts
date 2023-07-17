@@ -1,11 +1,29 @@
-import { createApp } from 'vue'
-import './scss/main.scss'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./scss/main.scss";
+import { createRouter, createWebHistory } from "vue-router";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);
 
-import App from './App.vue'
-import router from './router'
+// set the default style
+config.styleDefault = "duotone";
+const Home = () => import("./views/Home.vue");
+const Projects = () => import("./views/Projects.vue");
 
-const app = createApp(App);
+const routes = [
+  { path: "/", component: Home },
+  { path: "/projects", component: Projects },
+];
 
-app.use(router.router);
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
-app.mount('#app');
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(router)
+  .mount("#app");
