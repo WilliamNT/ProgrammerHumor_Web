@@ -1,0 +1,11 @@
+.btn {
+  @apply _btn-base p-3;
+}
+
+.btn-sm {
+  @apply _btn-base p-2;
+}
+
+._btn-base {
+  @apply rounded-lg hover:brightness-90 bg-white transition text-black;
+}
